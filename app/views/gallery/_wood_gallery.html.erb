@@ -1,0 +1,22 @@
+<div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+        <div class="row">
+            <% @furnitures_gallery.each do |furniture| %>
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <%= image_tag furniture.product_image, class: "img-fluid product-thumbnail" %>
+                        <h3 class="product-title"><%= furniture.name %></h3>
+                        <h3 class="product-title"><%= furniture.category %></h3>
+                        <strong class="product-price">Rs.<%= furniture.price %></strong>
+
+                        <%# <span class="icon-cross">
+                            <img src="/assets/cross.svg" class="img-fluid">
+                        </span> %>
+                        <%= button_to 'Add to Cart',line_items_path(:store_id => furniture.id),class: "btn btn-primary" %>
+
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>

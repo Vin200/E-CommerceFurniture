@@ -1,0 +1,53 @@
+/* Center all forms horizontally */
+.custom-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  /* Style form elements */
+  .custom-form-container form {
+    max-width: 400px; /* Set the maximum width for the form */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .custom-form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .custom-form-container input[type="text"],
+  .custom-form-container input[type="email"],
+  .custom-form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .custom-form-container input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
